@@ -1,0 +1,75 @@
+$(document).ready(function() {
+	window.HlSize = new HlSize();
+});
+var HlSize = function (options) {
+	this.options = options;
+	this.w = {
+		xs: 767,
+		sm: 768,
+		md: 992,
+		lg: 1261
+	};
+	this.statusScreen = "xs";
+	this.orientScreen = "portrait";
+	this.statusStart = "xs";
+	this.statusChange = false;
+	this.defaulToolTipWidth = 345;
+
+	this.searchType = function(){
+		var widthBody = $(window).width();
+		if(widthBody < this.w.sm)
+			this.statusScreen = "xs";
+		else if(widthBody >= this.w.sm && widthBody < this.w.md)
+			this.statusScreen = "sm";
+		else if(widthBody >= this.w.md && widthBody < this.w.lg)
+			this.statusScreen = "md";
+		else if(widthBody >= this.w.lg)
+			this.statusScreen = "lg";
+		this.orientScreen = this.orient();
+		this.changeHandler();
+	};
+	this.changeHandler = function(){
+		$("body").attr("monitor-width", this.statusScreen);
+		$("body").attr("monitor-orient", this.orientScreen);
+		if(this.statusScreen == "xs"){
+			this.click();
+		}
+	};
+	this.oneInit = function(){
+		this.contactActive();
+	}
+	this.contactActive = function(){
+		if(this.statusScreen !== "lg"){
+			setTimeout(function(){
+				$(".visible-mob a").trigger('click');
+			},2);
+		}
+	}
+	this.click = function(){}
+	this.orient = function(){
+		var winWidth = $(window).width();
+		var winHeight = $(window).height();
+		if(winWidth > winHeight)
+			return "albom";
+
+		return "portrait";
+	}
+	this.Init = function () {
+		this.searchType();
+		this__ = this;
+		this__.oneInit();
+		$(window).on('resize', function () {
+			this__.searchType();
+		});
+	};
+	this.reInit = function () {
+		this.searchType();
+		this__ = this;
+		this__.oneInit();
+		$(window).on('resize', function () {
+			this__.searchType();
+		});
+	};
+	this.Init();
+
+};

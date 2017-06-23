@@ -1,0 +1,70 @@
+@media (min-width: 1200px){
+	.link-block{position: fixed;top: 370px;right: 0;z-index: 1041;}
+	.link-block .hl-link-block-relet{position: relative;}
+	.link-block .hl-link-block-relet .link-nav-block{position: absolute; bottom: 0;right:0;}
+	.link-block .btitle{font-size: 15px;}
+	.link-block .link-button{
+		padding: 10px 20px;
+		background-color: #fff;
+		border-top: 1px solid #c7cdd3;
+		border-left: 1px solid #c7cdd3;
+		border-bottom: 1px solid #c7cdd3;
+		border-radius: 8px 0 0 8px;
+		cursor: pointer;
+		display: inline-block;
+	}
+	.link-block .link-button i{color: #279e03; font-size:24px;}
+	.link-block .link-button:hover{background-color:#ebeff3;}
+	.link-block .link-button:hover i{color: #4c4c4c;}
+	.link-block .link-button i.fa-chevron-right{display: none;}
+	.link-block .link-button .btitle{display: none; color: #4c4c4c; margin-left: 10px; float: right}
+	.link-block.active .link-button .btitle{display: inline-block;}
+	.link-block.active .link-button i.fa-chevron-right{display: inline-block;}
+	.link-block.active .link-button i.fa-chevron-left{display: none;}
+	.link-block.active .link-button{border-top: 1px solid #fff; border-radius: 0 0 0 8px;}
+	.link-block .link-nav-block{display: none;}
+	.link-block.active .link-nav-block{
+		font-size: 15px;
+		display: block;
+		background-color:#fff;
+		border-top: 1px solid #c7cdd3;
+		border-left: 1px solid #c7cdd3;
+		border-bottom: 1px solid #c7cdd3;
+		border-radius: 8px 0 0 8px;
+		margin-bottom: -1px;
+	}
+	.link-block.active .link-nav-block ul{list-style: none;margin: 0;padding:0;}
+	.link-block.active .link-nav-block ul li{display: block; line-height: 18px;}
+	.link-block.active .link-nav-block li a{
+		padding:14px 20px 14px 50px;
+		color: #4c4c4c;
+		display: block;
+		border-bottom: 1px solid #c7cdd3;
+		position:relative;
+		font-weight: bold;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.link-block.active .link-nav-block li:first-child a{border-radius: 8px 0 0 0;}
+	.link-block.active .link-nav-block li:last-child a{border-radius: 0 0 0 8px;}
+	.link-block.active .link-nav-block li:last-child a{border-bottom-width: 0;}
+	.link-block.active .link-nav-block li a:before{
+		content: "";
+		display: block;
+		background: url("images/spite-linced-pic.png"/*tpa=https://cargo-avto.ru/local/components/hl/linkbysite/templates/by_site_s1/images/spite-linced-pic.png*/);
+		width: 27px;
+		height: 30px;
+		position: absolute;
+		left:12px;
+		top: 11px;
+		background-repeat: no-repeat;
+	}
+	.link-block.active .link-nav-block li a.cargo-car:before{background-position: 0 4px;height: 27px;}
+	.link-block.active .link-nav-block li a.services-loaders:before{background-position: 0 -26px;}
+	.link-block.active .link-nav-block li a.parkaging:before{background-position: 0 -55px;}
+	.link-block.active .link-nav-block li a.storage:before{background-position: 0 -88px;height: 27px;}
+	.link-block.active .link-nav-block li a.trash:before{background-position: 0 -113px;}
+	.link-block.active .link-nav-block li a.evacuater:before{background-position: 0 -138px;}
+	.link-block .link-nav-block li a:hover{background-color:#ebeff3;}
+}
+@media (max-width: 1199px){.link-block{display: none;}}

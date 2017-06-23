@@ -1,0 +1,70 @@
+.mega-menu table td .wrap > a, .mega-menu table td:not(.js-dropdown) .wrap .slide_wrapp a.link_first {
+	height:55px;
+}
+.i_menu {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    box-sizing: border-box;
+    display: none;
+   /* background-color:#920000;*/
+    left: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 32px 0;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+     z-index: 1000;
+}
+
+
+.mega-menu table td:hover > .wrap > .i_menu,
+.mega-menu table td:hover > .wrap noindex > .i_menu,
+.mega-menu table td:hover > .wrap > .slide_wrapp > .dropdown-menu, .mega-menu.menu_wr .dropdown:hover noindex > .i_menu {
+    /* display: block !important; */
+}
+.mega-menu table td:hover > .wrap noindex > .dropdown-menu,
+.mega-menu table td:hover > .wrap noindex > .slide_wrapp > .dropdown-menu,
+.mega-menu.menu_wr .dropdown:hover noindex > .dropdown-menu {
+    display: block;
+}
+
+.mega-menu ul.nav li.resp-active noindex > ul.dropdown-menu {
+    display: block !important;
+}
+
+
+.i_menu li {
+
+float:left;
+text-align:left;
+padding-left:15px;
+padding-bottom:16px;
+
+}
+
+.i_menu li .fa {
+	color:#e7bd7e;
+	font-weight:bold;
+	font-size:18px;
+	width:15px;
+	float: left;
+    padding-top: 2px;
+}
+.i_menu li a span {display:inline-block; line-height:22px}
+.i_menu li a { color:#333; }
+.i_menu li a:hover span {text-decoration:underline !important; }
+
+@media (max-width:767px){
+	.topmenu-COLOR .menu-row.row {position:relative;}
+
+	.topmenu-COLOR .menu-row.row #mainMenu {position:absolute;top:0;}
+}
+
+
+
+
+
+

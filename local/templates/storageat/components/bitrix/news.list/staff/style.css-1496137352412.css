@@ -1,0 +1,10 @@
+.item-views.staff .item .property .fa{font-size: 20px; width: 30px;height: auto;color:#6d7a83; line-height: 27px;}
+.item-views.staff .item:hover .property .fa, .item-views.staff .item .property .fa{color:#6d7a83;}
+.item-views.staff .item .property{width:100%;}
+.item-views.staff .group-content h4{
+	margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: normal;
+    margin-top: 0;
+}

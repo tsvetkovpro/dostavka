@@ -1,0 +1,30 @@
+$(document).ready(function() {
+	$(".catalog-list-element").on("click", ".button-filter", function(){
+		_parent = $(this).parents(".catalog-list-element");
+		if($(this).hasClass("active")){
+			$(this).removeClass('active');
+			history.pushState({}, '', window.pageUrl)
+			viewCatalog();
+		}else{
+			$('.button-filter.active', _parent).removeClass('active');
+			$(this).addClass('active');
+			history.pushState({}, $(this).text(), $(this).data('section-url'));
+			viewCatalog($(this).data('section-id'));
+		}
+	});
+});
+function viewCatalog(id = false){
+	__parent = $(".item-views.catalog");
+	if(!id)id = false;
+	__parent.animate({
+		opacity: 0
+	},400, function() {
+		if(!id){
+			$(".notview", __parent).removeClass('notview');
+		}else{
+			$(".items > div", __parent).addClass('notview');
+			$(".item-element-href-"+id, __parent).removeClass('notview');
+		}
+		__parent.animate({opacity: 1}, 200);
+	});
+}

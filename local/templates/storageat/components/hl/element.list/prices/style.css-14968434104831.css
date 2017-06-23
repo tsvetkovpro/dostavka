@@ -1,0 +1,167 @@
+.prices{color: #fc8100;font-size: 21px;}
+.prices .front_title .title_block{color: #333;margin-bottom: -25px;}
+.price-tab{border-bottom: 2px solid #279e03;}
+.price-tab .price-tab-one{
+	background-color: #279e03;
+	width: 210px;
+	line-height: 2;
+	padding: 4px;
+	text-align: center;
+}
+.price-car-line{
+	background-color: #f7f7f8;
+	border: 1px solid #dfdfdf;
+	margin-top: 34px;
+}
+.price-car-line>div {padding: 14px 18px;float: left;}
+.price-car-line>div:last-child{padding-right: 15px;}
+.price-car-line:before, .price-car-line:after {
+    content: " ";
+    display: table;
+}
+.price-car-line:after {clear: both;}
+
+.price-car-line .name-car{
+	background-color: #e8e8e8;
+	line-height: 2;
+	font-weight: bold;
+	width: 210px;
+	color:#333;
+}
+.price-car-line .charapter-car>div{
+	padding-left: 25px;
+	padding-right: 10px;
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	color: #333333;
+	line-height: 2.33;
+	min-width: 73px;
+	font-size: 18px;
+}
+.price-car-line .charapter-car>div:first-child{
+	min-width: 95px;
+}
+.price-car-line .charapter-car>div:before{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	content: "";
+	background-image: url("../../../../../../lib/img/sprite-car.png"/*tpa=https://cargo-avto.ru/local/lib/img/sprite-car.png*/);
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 23px;
+}
+.price-car-line .charapter-car .car-bulk:before{background-position: 0 0;}
+.price-car-line .charapter-car .car-carrying:before{background-position: -25px 0;}
+.price-car-line .charapter-car .car-people:before{background-position: -50px 0;}
+.price-car-line .charapter-car .car-hours:before{background-position: -126px -1px; width: 21px;}
+
+.price-car-line .img-car{float: right;position: relative;width: 225px;padding:0;height: 69px;}
+.price-car-line .img-car img{
+	position: absolute;
+	right: -11px;
+	bottom: -22px;
+}
+.price-car-line .price-car{
+	width: 300px;
+	float: right;
+	/* background-color: #fc8100; */
+	text-align:right;
+}
+.price-car-line .price-car>div{display: inline-block;box-sizing: border-box;}
+.price-car-line .price-car .prices-car-old{
+	font-size: 29px;
+	color: #333333;
+	line-height: 1.27;
+	position: relative;
+}
+.price-car-line .price-car .prices-car-old:before {
+    border-bottom: 2px solid red;
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 56%;
+    transform: rotate(-18deg);
+    left: -5px;
+}
+.price-car-line .price-car .price-car-realy{font-size: 40px; line-height: 1.07; padding-left: 15px;font-weight: 700;}
+.price-description{color: #333; font-size: 19px;margin-top: 25px;}
+.delimiter{height: 50px;}
+
+/*----people----*/
+.price-people-line{
+	margin-top: 64px;
+	margin-bottom: 15px;
+	position: relative;
+	padding-right: 50px;
+}
+.name-people{
+	width: 100%;
+	background-color:#e8e8e8;
+	line-height: 2;
+	font-weight: bold;
+	padding:14px 18px;
+	color: #333;
+}
+.price-people{
+	width: 100%;
+	background-color:#f7f7f8;
+	padding:14px 18px;
+}
+.price-people-line .price-people>div{display: inline-block;box-sizing: border-box;}
+.price-people-line .price-people .prices-people-old{
+	font-size: 29px;
+	color: #333333;
+	line-height: 1.27;
+	position: relative;
+}
+.price-people-line .price-people .prices-people-old:before {
+    border-bottom: 2px solid red;
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 56%;
+    transform: rotate(-18deg);
+    left: -5px;
+}
+.price-people-line .price-people .price-people-realy{font-size: 40px; line-height: 1.07; padding-left: 15px;font-weight: 700;}
+.price-people-line .img-people{
+	position: absolute;
+	right: 0;
+	top: -30px;
+}
+.prices .bbtpd{margin-top: 3px; width: 210px;}
+.prices .front_title{padding-bottom: 35px;}
+.prices .tarif-name{padding: 15px 0 0; font-size: 21px; margin-bottom: -10px;font-weight: bold;}
+@media (max-width: 1140px){
+	.price-car-line .name-car{width: 30%;}
+	.price-car-line .price-car{width: 35%;}
+	.price-car-line .charapter-car{width: 70%;}
+	.price-car-line .img-car{width: 65%;}
+	.price-car-line .charapter-car{clear: right;margin-bottom: 20px;}
+	.price-people-line .price-people .price-people-realy{font-size: 32px;}
+}
+@media (max-width: 877px){
+	.price-car-line .name-car{width: 35%;}
+	.price-car-line .price-car{width: 49%; text-align: right;}
+	.price-car-line .charapter-car{width: 65%;clear: right;margin-bottom: 35px; text-align: right;}
+	.price-car-line .img-car{width: 51%;}
+}
+@media (max-width: 628px){
+	.price-car-line .name-car{float:none;width: 100%;}
+	.price-car-line .charapter-car{float:none;width: 100%;margin-bottom:0;}
+	.price-car-line .img-car{float:none;width: 100%;margin-top: 5px;height: auto;text-align: center;}
+	.price-car-line>div:last-child{padding-right:0;}
+	.price-car-line .img-car img{position: static; margin: 10px 0;}
+	.price-car-line .price-car{float:none;width: 100%;}
+}
+@media (max-width: 430px){
+	.price-people-line .img-people {
+	    position: absolute;
+	    right: 0;
+	    bottom: -10px;
+	    top: auto;
+	    width: 127px;
+	}
+}
