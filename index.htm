@@ -1203,7 +1203,7 @@
 	});</script>
 	<script type="text/javascript">(window.BX || top.BX).message({
 		'LANGUAGE_ID': 'ru',
-		'FORMAT_DATE': 'https://cargo-avto.ru/DD.MM.YYYY',
+		'FORMAT_DATE': '/DD.MM.YYYY',
 		'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
 		'COOKIE_PREFIX': 'BITRIX_SM',
 		'SERVER_TZ_OFFSET': '10800',
@@ -1360,12 +1360,12 @@
 			'DATETIME_PLACEHOLDER': 'дд.мм.гггг чч:мм',
 			'VALIDATE_DATETIME_MASK': '^[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{4} [0-9]{1,2}\:[0-9]{1,2}$',
 			'VALIDATE_FILE_EXT': 'png|jpg|jpeg|gif|doc|docx|xls|xlsx|txt|pdf|odt|rtf',
-			'SOCIAL_VK': 'https://vk.com/cargo_avto',
-			'SOCIAL_FACEBOOK': 'https://www.facebook.com/cargoavto',
+			'SOCIAL_VK': '',
+			'SOCIAL_FACEBOOK': '',
 			'SOCIAL_TWITTER': '',
-			'SOCIAL_YOUTUBE': 'https://www.youtube.com/c/Cargo-AvtoRu',
+			'SOCIAL_YOUTUBE': '',
 			'SOCIAL_ODNOKLASSNIKI': '',
-			'SOCIAL_GOOGLEPLUS': 'https://plus.google.com/u/0/117412497757920963302',
+			'SOCIAL_GOOGLEPLUS': '',
 			'BANNER_WIDTH': 'NARROW',
 			'TEASERS_INDEX': '',
 			'CATALOG_INDEX': '',
@@ -1461,7 +1461,7 @@
 										<div class="top_menu_fixed_js">
 											<ul class="nav nav-pills responsive-menu visible-xs" id="mainMenuF">
 												<li class="dropdown ">
-													<a class="dropdown-toggle" href="#">
+													<a class="dropdown-toggle" href="./services">
 														Наши услуги <i class="fa fa-angle-right"></i>
 													</a>
 													<ul class="dropdown-menu fixed_menu_ext">
@@ -1506,7 +1506,7 @@
 												<tr>
 													<td class=" ">
 														<div class="wrap">
-															<a class="dropdown-toggle link_first" href="#">
+															<a class="dropdown-toggle link_first" href="./services">
 																Наши услуги <i class="fa fa-angle-down"></i>
 															</a>
 															<span class="tail"></span>
@@ -1628,7 +1628,7 @@
 								<div class="search" id="title-search">
 									<div class="maxwidth-theme">
 										<div class="col-md-12">
-											<form action="https://cargo-avto.ru/search/">
+											<form action="#">
 												<div class="search-input-div">
 													<input class="search-input" id="title-search-input" type="text" name="q" value=""
 																 placeholder="Найти" size="40" maxlength="50" autocomplete="off"/>
@@ -1643,7 +1643,6 @@
 								</div>
 								<script type="text/javascript">
 									var jsControl = new JCTitleSearch({
-										//'WAIT_IMAGE': 'bitrix/themes/.default/images/wait.gif'/*tpa=https://cargo-avto.ru/bitrix/themes/.default/images/wait.gif*/,
 										'AJAX_PAGE': '/',
 										'CONTAINER_ID': 'title-search',
 										'INPUT_ID': 'title-search-input',
@@ -1663,7 +1662,8 @@
 		<div class="maxwidth-theme">
 			<div class="col-xs-12 visible-xs text-center costul  notbotmarg">
 				<noindex><span style="color: #fc8100; font-size: 14pt;"
-											 line-height="1.4pt"><b>Сбалансированное питание</b></span><span style="color: #707070;"> </span> <br>
+											 line-height="1.4pt"><b>Сбалансированное питание</b></span><span style="color: #707070;"> </span>
+					<br>
 					всегда вовремя
 				</noindex>
 			</div>
@@ -1803,16 +1803,16 @@
 												<div class="hlbtn-group">
 													<div class="wdt50">
 														<span
-															data-event="jqm"
-															data-param-id="15"
-															data-name="order_services"
-															data-autoload-service="Дачный переезд"
-															href="#"
-															class="btn-line">Заказать
+																data-event="jqm"
+																data-param-id="15"
+																data-name="order_services"
+																data-autoload-service="Дачный переезд"
+																href="#"
+																class="btn-line">Заказать
 														</span>
 													</div>
 													<div class="wdt50">
-														<a href="#"class="btn-btn-line">Подробнее</a></div>
+														<a href="#" class="btn-btn-line">Подробнее</a></div>
 												</div>
 											</div>
 										</div>
@@ -2068,16 +2068,22 @@
 																<div class="block_send block_tel"><i class="fa-fa-angle-right"></i>
 																	<div class="butn_centera">
 																		<div class="block_telephon_text">Введите Ваш номер телефона
-																			<form id="suc_form_260" сlass="block_telephon_form" name="sendform260"
-																						action="https://cargo-avto.ru/ajax/form.php?id=17" method="POST"
-																						enctype="multipart/form-data" novalidate="novalidate">
+																			<form>
+
+																				<!-- Hidden Required Fields -->
+																				<input type="hidden" name="project_name" value="L_FOOD">
+																				<input type="hidden" name="admin_email" value="mail@l-food.ru">
+																				<input type="hidden" name="form_subject" value="Заказ с сайта l-food">
+																				<!-- END Hidden Required Fields -->
 
 																				<input name="NAME" value="SpezBlock" type="hidden">
 																				<input name="MESSAGE" value="Для вас уникальное предложение" type="hidden">
 																				<input name="NEED_PRODUCT" value="Главная" type="hidden">
 
-																				<input class="block_telephon form-control required phone" value=""
-																							 aria-required="true" id="PHONE" name="PHONE" type="text" value=""
+																				<input class="block_telephon form-control required phone"
+																							 aria-required="true"
+																							 id="PHONE"
+																							 name="PHONE"
 																							 placeholder="+7 (    )     -     -   "/>
 																				<div class="errorPhone"></div>
 																				<input name="form_submit" value="Отправить" type="hidden">
@@ -2374,7 +2380,7 @@
 										</a>
 									</li>
 									<li class="lj">
-										<a href="https://www.youtube.com/c/Cargo-AvtoRu" target="_blank" rel="nofollow" title="YouTube">
+										<a href="#" target="_blank" rel="nofollow" title="YouTube">
 											YouTube <i class="fa fa-youtube"></i>
 											<i class="fa fa-youtube hide"></i>
 										</a>
@@ -2419,7 +2425,35 @@
 </footer>
 
 
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40399000 = new Ya.Metrika({ id:40399000, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40399000" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function(d, w, c) {
+	(w[c] = w[c] || []).push(function() {
+		try {
+			w.yaCounter40399000 = new Ya.Metrika({
+				id: 40399000,
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true
+			});
+		} catch (e) {
+		}
+	});
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function() {
+		n.parentNode.insertBefore(s, n);
+	};
+	s.type = "text/javascript";
+	s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") {
+		d.addEventListener("DOMContentLoaded", f, false);
+	} else {
+		f();
+	}
+})(document, window, "yandex_metrika_callbacks"); </script>
+<noscript>
+	<div><img src="https://mc.yandex.ru/watch/40399000" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript> <!-- /Yandex.Metrika counter -->
 
 </body>
 </html>
