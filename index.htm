@@ -1316,7 +1316,7 @@
 	<script type="text/javascript" src="local/templates/storageat/js/jquery.dotdotdot.js-14932087925908"></script>
 	<script type="text/javascript" src="local/templates/storageat/js/jquery-ui.min.js-1493208792240206"></script>
 	<script type="text/javascript" src="local/templates/storageat/js/general.js-149613631536228"></script>
-	<script type="text/javascript" src="local/templates/storageat/js/custom.js-149744274612272"></script>
+	<!--<script type="text/javascript" src="local/templates/storageat/js/custom.js-149744274612272"></script>-->
 	<script type="text/javascript"
 					src="local/templates/storageat/components/bitrix/menu/top/script.js-1493208792601"></script>
 	<script type="text/javascript" src="bitrix/components/bitrix/search.title/script.js-14932087869371"></script>
@@ -2068,25 +2068,20 @@
 																<div class="block_send block_tel"><i class="fa-fa-angle-right"></i>
 																	<div class="butn_centera">
 																		<div class="block_telephon_text">Введите Ваш номер телефона
-																			<form>
+																			<form id="main-contact-form" name="contact-form" method="post"  action="./mail.php">
 
-																				<!-- Hidden Required Fields -->
-																				<input type="hidden" name="project_name" value="L_FOOD">
-																				<input type="hidden" name="admin_email" value="mail@l-food.ru">
-																				<input type="hidden" name="form_subject" value="Заказ с сайта l-food">
-																				<!-- END Hidden Required Fields -->
-
-																				<input name="NAME" value="SpezBlock" type="hidden">
-																				<input name="MESSAGE" value="Для вас уникальное предложение" type="hidden">
-																				<input name="NEED_PRODUCT" value="Главная" type="hidden">
+																				<input name="name" value="SpezBlock" type="hidden">
+																				<input name="email" value="Для вас уникальное предложение" type="hidden">
+																				<input name="subject" value="Главная" type="hidden">
 
 																				<input class="block_telephon form-control required phone"
+																							 id="phone123"
 																							 aria-required="true"
-																							 id="PHONE"
-																							 name="PHONE"
+																							 name="phone123"
 																							 placeholder="+7 (    )     -     -   "/>
 																				<div class="errorPhone"></div>
 																				<input name="form_submit" value="Отправить" type="hidden">
+																				<button type="submit" class="btn btn-primary">Send Message</button>
 																			</form>
 																		</div>
 																	</div>
@@ -2454,6 +2449,39 @@
 <noscript>
 	<div><img src="https://mc.yandex.ru/watch/40399000" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript> <!-- /Yandex.Metrika counter -->
+
+<script>
+	var form = $('#main-contact-form');
+	form.submit(function(event){
+		event.preventDefault();
+		var form_status = $('<div class="form_status"></div>');
+
+		var data = {
+			name: $('#phone123').val()
+		};
+
+		$.ajax({
+			url: $(this).attr('action'),
+			type: "POST",
+			dataType: "json",
+			data: {'data': data},
+			beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+			},
+			success: function (data) {
+				if(data == 1){
+					form_status.html('<p class="text-success">Thank you, your message has been sent successfully. We aim to reply as soon as possible.</p>').delay(3000).fadeOut();
+				}
+				else{
+					form_status.html('<p class="text-error">Sorry, email not sent</p>').delay(3000).fadeOut();
+				}
+			},
+			error: function (xhr, status, error) {
+				console.log(error);
+			}
+		});
+	});
+</script>
 
 </body>
 </html>
