@@ -1,0 +1,9 @@
+.c3 li:first-child+*+* p{
+	padding-top: 12px;
+}
+.c3 li:first-child+*+*+*+*+* p{
+	padding-top: 12px;
+}
+.c3 li:first-child+*+*+*+*+*+*+* p{
+	padding-top: 30px;
+}
