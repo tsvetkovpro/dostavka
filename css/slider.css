@@ -10,7 +10,7 @@
 	height:16px;
 	overflow:hidden;
 	text-indent:-9999px;
-	background:url("../img/radioBg.png"/*tpa=http://europhotoservice.ru/img/radioBg.png*/) center bottom no-repeat;}
+	background:url("../img/radioBg.png") center bottom no-repeat;}
 .sli-links .control-slide:hover{
 	cursor:pointer;
 	background-position:center center;}
@@ -24,14 +24,14 @@
 	top:0;
 	overflow:hidden;
 	text-indent:-999px;
-	background:url("../img/slider-nav-left.png"/*tpa=http://europhotoservice.ru/img/slider-nav-left.png*/) left center no-repeat;
+	background:url("../img/slider-nav-left.png") left center no-repeat;
 	opacity:0.8;
 	z-index:3;
 	outline:none !important;}
 .prewbutton{left:10px;}
 .nextbutton{
 	right:19px;
-	background:url("../img/slider-nav-right.png"/*tpa=http://europhotoservice.ru/img/slider-nav-right.png*/) right center no-repeat;}
+	background:url("../img/slider-nav-right.png") right center no-repeat;}
 .slide-1 .prewbutton:hover, .nextbutton:hover{
 	opacity:1;}
 	
