@@ -1,9 +1,0 @@
-.item .title{
-	color: #279e03;
-	font-size: 18px !important;
-}
-.item .text{font-size: 16px;}
-.item .image a{display: inline-block;position: relative;}
-.item .image a span.zoom{top: auto; bottom: 20px;}
-.item:hover .image a span.zoom{opacity:0.3;}
-.item .image a:hover span.zoom{opacity: 1;}
