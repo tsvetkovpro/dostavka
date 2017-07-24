@@ -113,7 +113,7 @@
 	font-size: 23px;
 	color: #1e3653;
 	font-family: "helveticaneuecyrlight";
-	background: url("../img/icon-phone.png"/*tpa=http://europhotoservice.ru/img/icon-phone.png*/) no-repeat center left;
+	background: url("../img/icon-phone.png") no-repeat center left;
 	padding-left: 15px;
 	margin-left: 5px;
 	margin-bottom: 5px;
@@ -131,7 +131,7 @@
 	clear: both;
 	font-size: 18px;
 	color: #333333;
-	background: url("../img/icon-mail.png"/*tpa=http://europhotoservice.ru/img/icon-mail.png*/) no-repeat center left;
+	background: url("../img/icon-mail.png") no-repeat center left;
 	padding-left: 15px;
 	margin-left: 5px;
 }
@@ -155,7 +155,7 @@
 	margin: auto;
 }
 .c1{
-	background: url("../img/bg-c1.jpg"/*tpa=http://europhotoservice.ru/img/bg-c1.jpg*/) no-repeat center;
+	background: url("../img/bg-c1.jpg") no-repeat center;
 	min-width: 1000px;
 }
 .c1 .title{
@@ -205,7 +205,7 @@
 	font-size: 24px;
 	padding-left: 33px;
 	padding-right: 38px;
-	background: url("../img/text-right-arrow.png"/*tpa=http://europhotoservice.ru/img/text-right-arrow.png*/) no-repeat center right;
+	background: url("../img/text-right-arrow.png") no-repeat center right;
 	top:2px;
 }
 .c1{
@@ -349,7 +349,7 @@
 }
 .c3 .btn span{
 	font-size: 24px;
-	background: url("../img/text-right-arrow.png"/*tpa=http://europhotoservice.ru/img/text-right-arrow.png*/) no-repeat right center;
+	background: url("../img/text-right-arrow.png") no-repeat right center;
 	padding-right: 40px;
 	padding-left: 26px;
 	position: relative;
@@ -409,7 +409,7 @@
 	max-width: 1051px;
 	height: 773px;
 	margin: auto;
-	background: url("../img/ipad.png"/*tpa=http://europhotoservice.ru/img/ipad.png*/) no-repeat center;
+	background: url("../img/ipad.png") no-repeat center;
 	position: relative;	
 }
 .c4 .ipad .frame-wrapper{
@@ -450,7 +450,7 @@
 	font-size: 24px;
 	padding-left: 10px;
 	padding-right: 40px;
-	background: url("../img/text-right-arrow.png"/*tpa=http://europhotoservice.ru/img/text-right-arrow.png*/) no-repeat right center;
+	background: url("../img/text-right-arrow.png") no-repeat right center;
 	position: relative;
 	top:3px;
 }
@@ -460,7 +460,7 @@
 }
 .c5{
 	padding-top: 51px;
-	background: url("../img/bg-wood.jpg"/*tpa=http://europhotoservice.ru/img/bg-wood.jpg*/) no-repeat center;
+	background: url("../img/bg-wood.jpg") no-repeat center;
 }
 .c5 .title{
 	margin: auto;
@@ -528,7 +528,7 @@
 	min-width: 1000px;
 }
 .c6{
-	background: url("../img/bg-blue.png"/*tpa=http://europhotoservice.ru/img/bg-blue.png*/) no-repeat center top;
+	background: url("../img/bg-blue.png") no-repeat center top;
 	min-width: 1000px;
 }
 .c6 p{
@@ -699,13 +699,13 @@
 	top: -1px;
 	padding-left: 18px;
 	padding-right: 40px;
-	background: url("../img/text-right-arrow.png"/*tpa=http://europhotoservice.ru/img/text-right-arrow.png*/) no-repeat right center;
+	background: url("../img/text-right-arrow.png") no-repeat right center;
 }
 .c8{
 	padding-bottom: 125px;
 }
 .c9{
-	background: url("../img/bg-rezult.jpg"/*tpa=http://europhotoservice.ru/img/bg-rezult.jpg*/) no-repeat center top;
+	background: url("../img/bg-rezult.jpg") no-repeat center top;
 	padding-top: 52px;
 	padding-bottom: 142px;
 	min-width: 1000px;
@@ -739,7 +739,7 @@
 }
 .c10{
 	padding-top: 48px;
-  background: url("../img/paralax.jpg"/*tpa=http://europhotoservice.ru/img/paralax.jpg*/) center 0 no-repeat fixed;
+  background: url("../img/paralax.jpg") center 0 no-repeat fixed;
 	padding-bottom: 85px;
 	min-width: 1000px;
 }
@@ -826,7 +826,7 @@
 	font-weight: bold;
 }
 .footer{
-	background: url("../img/bg-footer.jpg"/*tpa=http://europhotoservice.ru/img/bg-footer.jpg*/) no-repeat center top;
+	background: url("../img/bg-footer.jpg") no-repeat center top;
 	height: 280px;
 	min-width: 1000px;
 }
@@ -864,13 +864,13 @@
 	margin-bottom: 7px;
 }
 .footer .contacts .adress{
-	background: url("../img/footer-icon1.png"/*tpa=http://europhotoservice.ru/img/footer-icon1.png*/) no-repeat left center;
+	background: url("../img/footer-icon1.png") no-repeat left center;
 }
 .footer .contacts .phone{
-	background: url("../img/footer-icon2.png"/*tpa=http://europhotoservice.ru/img/footer-icon2.png*/) no-repeat left center;
+	background: url("../img/footer-icon2.png") no-repeat left center;
 }
 .footer .contacts .mail{
-	background: url("../img/footer-icon3.png"/*tpa=http://europhotoservice.ru/img/footer-icon3.png*/) no-repeat left center;
+	background: url("../img/footer-icon3.png") no-repeat left center;
 }
 .footer .contacts .mail a{
 	text-decoration: underline;
@@ -922,7 +922,7 @@
 	font-size: 18px;
 	font-family: "helveticaneuecyrlight";
 	padding-left: 23px;
-	background: url("../img/footer-list-style.png"/*tpa=http://europhotoservice.ru/img/footer-list-style.png*/) no-repeat top left;
+	background: url("../img/footer-list-style.png") no-repeat top left;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -940,7 +940,7 @@
 	padding-bottom: 15px;
 }
 .popup .close-btn{
-	background: url("../img/close-icon.png"/*tpa=http://europhotoservice.ru/img/close-icon.png*/) center no-repeat;
+	background: url("../img/close-icon.png") center no-repeat;
 	width: 14px;
 	height: 14px;
 	position: absolute;
@@ -949,7 +949,7 @@
 	cursor: pointer;
 }
 .popup .close-btn:hover{
-	background: url("../img/close-icon.png"/*tpa=http://europhotoservice.ru/img/close-icon.png*/) no-repeat center #336699;
+	background: url("../img/close-icon.png") no-repeat center #336699;
 }
 .popup form p{
 	background-color: #1e3653;
