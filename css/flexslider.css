@@ -25,11 +25,11 @@
 /* Font-face Icons */
 @font-face {
 	font-family: 'flexslider-icon';
-	src:url("fonts/flexslider-icon.eot"/*tpa=http://europhotoservice.ru/css/fonts/flexslider-icon.eot*/);
-	src:url("fonts/flexslider-icon.eot-#iefix"/*tpa=http://europhotoservice.ru/css/fonts/flexslider-icon.eot?#iefix*/) format('embedded-opentype'),
-		url("fonts/flexslider-icon.woff"/*tpa=http://europhotoservice.ru/css/fonts/flexslider-icon.woff*/) format('woff'),
-		url("fonts/flexslider-icon.ttf"/*tpa=http://europhotoservice.ru/css/fonts/flexslider-icon.ttf*/) format('truetype'),
-		url("fonts/flexslider-icon.svg#flexslider-icon"/*tpa=http://europhotoservice.ru/css/fonts/flexslider-icon.svg#flexslider-icon*/) format('svg');
+	src:url("fonts/flexslider-icon.eot");
+	src:url("fonts/flexslider-icon.eot-#iefix") format('embedded-opentype'),
+		url("fonts/flexslider-icon.woff") format('woff'),
+		url("fonts/flexslider-icon.ttf") format('truetype'),
+		url("fonts/flexslider-icon.svg#flexslider-icon") format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,16 +40,16 @@
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;min-width: 1000px} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;height: 330px;opacity: 0;margin: 0; min-width: 1000px}
 .flexslider .slides > li:nth-child(1){
-	background:url("../img/bg-slide1.jpg"/*tpa=http://europhotoservice.ru/img/bg-slide1.jpg*/) no-repeat center top;
+	background:url("../img/bg-slide1.jpg") no-repeat center top;
 }
 .flexslider .slides > li:nth-child(2){
-	background:url("../img/bg-slide2.jpg"/*tpa=http://europhotoservice.ru/img/bg-slide2.jpg*/) no-repeat center top;
+	background:url("../img/bg-slide2.jpg") no-repeat center top;
 }
 .flexslider .slides > li:nth-child(3){
-	background:url("../img/bg-slide3.jpg"/*tpa=http://europhotoservice.ru/img/bg-slide3.jpg*/) no-repeat center top;
+	background:url("../img/bg-slide3.jpg") no-repeat center top;
 }
 .flexslider .slides > li:nth-child(4){
-	background:url("../img/bg-slide4.jpg"/*tpa=http://europhotoservice.ru/img/bg-slide4.jpg*/) no-repeat center top;
+	background:url("../img/bg-slide4.jpg") no-repeat center top;
 }
 .flex-pauseplay span {text-transform: capitalize;}
 
@@ -92,9 +92,9 @@ html[xmlns] .slides {display: block;}
 /* Control Nav */
 .flex-control-nav { position: relative; bottom: 36px; right: -9px; text-align: center; z-index: 10; margin: 0 auto;width: 120px;}
 .flex-control-nav li {margin: 0 5px; display: inline-block; zoom: 1; *display: inline;float: left;}
-.flex-control-paging li a {width: 20px; height: 20px; display: block; background: url("../img/slider-nav.png"/*tpa=http://europhotoservice.ru/img/slider-nav.png*/) no-repeat; cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a {width: 20px; height: 20px; display: block; background: url("../img/slider-nav.png") no-repeat; cursor: pointer; text-indent: -9999px;}
 .flex-control-paging li a:hover {cursor: pointer;}
-.flex-control-paging li a.flex-active { background: url("../img/slider-nav-active.png"/*tpa=http://europhotoservice.ru/img/slider-nav-active.png*/) no-repeat; cursor: default; width: 20px;height: 20px; }
+.flex-control-paging li a.flex-active { background: url("../img/slider-nav-active.png") no-repeat; cursor: default; width: 20px;height: 20px; }
 
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
